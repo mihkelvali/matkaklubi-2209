@@ -16,3 +16,10 @@ model Todo {
   text      String
   completed Boolean
 }
+
+model Trek {
+  id          String   @id @default(uuid())
+  createdAt   DateTime @default(now())
+  title       String
+  description String
+}

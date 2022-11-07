@@ -1,0 +1,39 @@
+.paisNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    align-items: centeri;
+}
+
+.logoPilt {
+    height: 100px;
+    width: 100px;
+}
+
+.logoTekst {
+    font-size: 33px;
+    font-weight: 800;
+    line-height: 35px;
+    color: #0B0B0B;
+    display: flex;
+    flex-direction: column;
+}
+
+.paremPool {
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 2.67px;
+    display: flex;
+    align-items: center;
+}
+
+.paremPoolLink {
+    margin-left: 20px;
+    color: #000000;
+    text-decoration: none;
+}

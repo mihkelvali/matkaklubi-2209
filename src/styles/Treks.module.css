@@ -1,0 +1,10 @@
+.pais {
+    background-image: url("../../public/Hills@2x.png");
+    height: 778px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 32px;
+    padding-left: 72px;
+    padding-right: 80px;
+}

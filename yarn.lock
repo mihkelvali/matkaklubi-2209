@@ -7,6 +7,11 @@
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.1.0.tgz#73713399399b34aa5a01771fb73272b55b22c314"
   integrity sha512-nrIgY6t17FQ9xxwH3jj0a6EOiQ/WDHUos35Hghtr+SWN/ntHIQ7UpuvSi0vaLzZVHQWaDupKI+liO5vANcDeTQ==
 
+"@next/font@^13.0.2":
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/@next/font/-/font-13.0.2.tgz#509467d6e4a04b67de2e5f21fd682227c2240cdb"
+  integrity sha512-tLbyZCA1uF8HjbUEN5c4zB453yEzt5aT9VDhXPw1/eJhX4U0Q4lD3s3Bs+gpCjuLrEgILd56jQuzxgrMnWHH8A==
+
 "@next/swc-android-arm64@12.1.0":
   version "12.1.0"
   resolved "https://registry.yarnpkg.com/@next/swc-android-arm64/-/swc-android-arm64-12.1.0.tgz#865ba3a9afc204ff2bdeea49dd64d58705007a39"
