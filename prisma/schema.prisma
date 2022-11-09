@@ -18,8 +18,15 @@ model Todo {
 }
 
 model Trek {
-  id          String   @id @default(uuid())
-  createdAt   DateTime @default(now())
-  title       String
-  description String
+  id                  String   @id @default(uuid())
+  createdAt           DateTime @default(now())
+  title               String
+  description         String
+  startsAt            String
+  endsAt              String
+  locationDescription String
+  locationLongitude   String
+  locationLatitude    String
+  price               String
+  imageUrl            String
 }

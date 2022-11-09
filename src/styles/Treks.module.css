@@ -8,3 +8,19 @@
     padding-left: 72px;
     padding-right: 80px;
 }
+
+.matkad {
+    display: flex;
+
+}
+
+.matk {
+    border: 1px solid darkblue;
+    padding: 0 0 20px 0;
+}
+
+.pildiKonteiner {
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
