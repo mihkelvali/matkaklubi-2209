@@ -33,7 +33,7 @@ export default () => {
                 <Link href="/">
                     <a className={styles.paremPoolLink}>TREKS FOR FAMILY</a>
                 </Link>
-                <Link href="/">
+                <Link href="/contact">
                     <a className={styles.paremPoolLink}>CONTACT US</a>
                 </Link>
             </div>

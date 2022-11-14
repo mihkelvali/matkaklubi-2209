@@ -1,47 +1,50 @@
 import useSWR, { mutate } from "swr";
 
 const trekPath = "/api/treks";
+const contactUsMessagePath = "/api/contact";
 
 export const useTreks = () => useSWR(trekPath);
 
-/*
-const todoPath = "/api/todos";
-
-export const useTodos = () => useSWR(todoPath);
-
-export const createTodo = async (text) => {
+export const createTrek = async (trek) => {
   mutate(
-    todoPath,
-    todos => [{ text, completed: false, id: "new-todo" }, ...todos],
+    trekPath,
+    treks => [{ ...trek, id: "new-trek" }, ...treks],
     false,
   );
-  await fetch(todoPath, {
+  await fetch(trekPath, {
     method: "POST",
-    body: JSON.stringify({ text }),
+    body: JSON.stringify({ trek }),
   });
 
-  mutate(todoPath);
+  mutate(trekPath);
 };
 
-export const toggleTodo = async (todo) => {
+export const updateTrek = async (trek) => {
   mutate(
-    todoPath,
-    todos =>
-      todos.map(t =>
-        t.id === todo.id ? { ...todo, completed: !t.completed } : t,
+    trekPath,
+    treks =>
+      treks.map(t =>
+        t.id === trek.id ? { ...trek } : t,
       ),
     false,
   );
-  await fetch(`${todoPath}?todoId=${todo.id}`, {
+
+  await fetch(`${trekPath}?trekId=${trek.id}`, {
     method: "PUT",
-    body: JSON.stringify({ completed: !todo.completed }),
+    body: JSON.stringify({ trek }),
   });
-  mutate(todoPath);
+  mutate(trekPath);
 };
 
-export const deleteTodo = async (id) => {
-  mutate(todoPath, todos => todos.filter(t => t.id !== id), false);
-  await fetch(`${todoPath}?todoId=${id}`, { method: "DELETE" });
-  mutate(todoPath);
+export const deleteTrek = async (id) => {
+  mutate(trekPath, treks => treks.filter(t => t.id !== id), false);
+  await fetch(`${trekPath}?trekId=${id}`, { method: "DELETE" });
+  mutate(trekPath);
 };
-*/
+
+export const sendMessage = async (message) => {
+  await fetch(contactUsMessagePath, {
+    method: "POST",
+    body: JSON.stringify({ message }),
+  });
+};
