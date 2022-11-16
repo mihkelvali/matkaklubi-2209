@@ -7,6 +7,7 @@ tags:
   - postgresql
   - typescript
 ---
+o
 
 # NextJS Prisma Example
 
